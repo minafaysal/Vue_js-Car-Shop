@@ -1,16 +1,20 @@
 <template>
-  <div id="app" class="container">
+  <div id="app" >
     <Mainmenu />
-    <router-view />
+    <div class="container">
+      
+      <router-view />
+    </div>
+    <Footer/>
   </div>
 </template>
 <script>
 import  Mainmenu  from "@/components/navbar/Mainmenu.vue";
-
+import  Footer  from "@/components/footer/footer.vue";
 export default ({
 name:"App",
   components: {
-    Mainmenu,
+    Mainmenu,Footer
   },
 });
 </script>

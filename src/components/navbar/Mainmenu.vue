@@ -1,10 +1,7 @@
 <template>
   <div>
     <ul class="nav">
-      
- 
-       <img src="@/assets/logo.png">
-     
+       <img src="@/assets/logo.png" >
       <router-link
         tag="li"
         :to="{ name: 'Home', params: { pageTitle: 'Main page' } }"
@@ -18,13 +15,13 @@
         tag="li"
         :to="{ name: 'About', params: { pageTitle: 'About' } }"
       >
-        <a>About</a>
+        <a>About US</a>
       </router-link>
       <router-link
         tag="li"
         :to="{ name: 'Contact', params: { pageTitle: 'Contact' } }"
       >
-        <a>Contact</a>
+        <a>Contact US</a>
       </router-link>
     </ul>
   </div>
@@ -74,7 +71,7 @@ export default {
   }
   img {
     width:100px;
-   margin-right:837px;
+   
    
   }
 }
